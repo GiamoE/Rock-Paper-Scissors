@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/ivPC"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="50dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/tvPC"
+        app:layout_constraintEnd_toStartOf="@+id/tvVS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rock"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivHuman"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/tvHuman"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvVS"
+        app:srcCompat="@drawable/rock"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pc"
+        app:layout_constraintEnd_toEndOf="@+id/ivPC"
+        app:layout_constraintStart_toStartOf="@+id/ivPC"
+        app:layout_constraintTop_toBottomOf="@+id/ivPC" />
+
+    <TextView
+        android:id="@+id/tvHuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/human"
+        app:layout_constraintEnd_toEndOf="@+id/ivHuman"
+        app:layout_constraintStart_toStartOf="@+id/ivHuman"
+        app:layout_constraintTop_toBottomOf="@+id/ivHuman" />
+
+    <TextView
+        android:id="@+id/tvVS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/versus"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHuman"
+        app:layout_constraintEnd_toStartOf="@+id/ivHuman"
+        app:layout_constraintStart_toEndOf="@+id/ivPC"
+        app:layout_constraintTop_toTopOf="@+id/ivHuman" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/ivPC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

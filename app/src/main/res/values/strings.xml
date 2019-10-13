@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Rock, Paper and Scissors</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">Welcome</string>
+    <string name="instructions">Click on one of the hands to make a move.</string>
+    <string name="versus">V.S.</string>
+    <string name="win">Winner!</string>
+    <string name="draw">Draw...</string>
+    <string name="lose">Loser!</string>
+    <string name="stat_title">Your all time statistics</string>
+    <string name="stats">Win: %d  Draw: %d  Lose: %d</string>
+    <string name="pc">Computer</string>
+    <string name="human">You</string>
+    <string name="history_title">Your Game History</string>
+</resources>
